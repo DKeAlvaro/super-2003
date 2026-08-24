@@ -4,14 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>El súper del 6 de enero de 2003</title>
-<meta name="description" content="17.000 precios de Carrefour y Eroski en 2003, comparados con Mercadona de 2026 y con el IPC. Lo que costaba, lo que cuesta, y cuántas horas de salario mínimo hay que echar.">
+<meta name="description" content="Qué costaba la compra en Carrefour y Eroski en 2003, qué cuesta en Mercadona ahora, y cuántas horas de sueldo mínimo hay que echar.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#efe4c8;
-  --paper2:#e6d7b4;
   --card:#f7eed8;
   --ink:#1a130c;
   --mute:#6a5c4c;
@@ -20,7 +19,6 @@
   --blue:#003d7a;
   --yellow:#f0c400;
   --green:#2c5a38;
-  --ok:#2c5a38;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -28,387 +26,535 @@ body{
   margin:0;
   background:var(--paper);
   color:var(--ink);
-  font:18px/1.5 "IBM Plex Sans",system-ui,sans-serif;
+  font:17px/1.5 "IBM Plex Sans",system-ui,sans-serif;
   -webkit-font-smoothing:antialiased;
-  background-image:
-    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(26,19,12,.015) 2px, rgba(26,19,12,.015) 3px);
 }
 a{color:var(--red)}
 nav{
   position:sticky;top:0;z-index:20;
-  background:rgba(239,228,200,.94);
+  background:rgba(239,228,200,.95);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--rule);
   overflow-x:auto;
   -webkit-overflow-scrolling:touch;
 }
 nav ul{
-  display:flex;gap:.1rem;list-style:none;margin:0 auto;padding:.4rem .8rem;
-  max-width:44rem;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;
+  display:flex;gap:.05rem;list-style:none;margin:0 auto;padding:.4rem .7rem;
+  max-width:42rem;font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;font-weight:600;
 }
-nav a{color:var(--mute);text-decoration:none;padding:.4rem .45rem;white-space:nowrap;border-radius:99px}
-nav a:hover{color:var(--ink);background:var(--paper2)}
-.wrap{max-width:42rem;margin:0 auto;padding:0 1.1rem 4.5rem}
+nav a{color:var(--mute);text-decoration:none;padding:.42rem .42rem;white-space:nowrap}
+nav a:hover{color:var(--ink)}
+.wrap{max-width:40rem;margin:0 auto;padding:0 1rem 4.5rem}
 .kicker{
-  font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red);
-  font-weight:600;margin:1.8rem 0 0;
+  font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red);
+  font-weight:600;margin:1.5rem 0 0;
 }
 h1{
   font-family:Newsreader,Georgia,serif;
-  font-size:clamp(2rem,7.4vw,3.1rem);
-  line-height:1.05;font-weight:600;letter-spacing:-.03em;
-  margin:.35rem 0 .8rem;
+  font-size:clamp(1.85rem,7vw,2.7rem);
+  line-height:1.08;font-weight:600;letter-spacing:-.03em;
+  margin:.3rem 0 .75rem;
 }
 h2{
   font-family:Newsreader,Georgia,serif;
-  font-size:1.55rem;line-height:1.15;margin:2.6rem 0 .7rem;letter-spacing:-.02em;
+  font-size:1.4rem;line-height:1.18;margin:2.3rem 0 .6rem;letter-spacing:-.02em;
 }
-h3{font-family:Newsreader,Georgia,serif;font-size:1.12rem;margin:1.5rem 0 .4rem}
-.deck{font-size:1.12rem;margin:0 0 1rem}
+p{margin:0 0 .95rem}
+.deck{font-size:1.05rem}
 .meta{
-  font-size:.82rem;color:var(--mute);
+  font-size:.8rem;color:var(--mute);
   border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
-  padding:.7rem 0;margin:0 0 1.6rem;
+  padding:.65rem 0;margin:0 0 1.3rem;
 }
-p{margin:0 0 1rem}
-.note,.small{font-size:.86rem;color:var(--mute);line-height:1.4}
+.note{font-size:.86rem;color:var(--mute);line-height:1.4}
+.hero{
+  display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin:1rem 0 1.3rem;
+}
+.stat{
+  background:var(--card);border:1px solid var(--rule);padding:.7rem .75rem;
+}
+.stat b{
+  display:block;font-family:"IBM Plex Mono",monospace;
+  font-size:clamp(1.15rem,4.6vw,1.55rem);font-weight:600;letter-spacing:-.03em;line-height:1.15;
+}
+.stat span{display:block;font-size:.75rem;color:var(--mute);margin-top:.28rem;line-height:1.3}
+.stat.up b{color:var(--red)}
+.stat.down b{color:var(--green)}
+
+/* ticket */
 .ticket{
   background:#f4f0e4;
   color:#111;
   font-family:"IBM Plex Mono",monospace;
-  font-size:.82rem;line-height:1.45;
-  padding:1.1rem 1rem 1.2rem;
-  margin:1.2rem 0 1.5rem;
-  box-shadow:0 8px 0 rgba(26,19,12,.06);
-  background-image:repeating-linear-gradient(-45deg, transparent, transparent 6px, rgba(0,0,0,.02) 6px, rgba(0,0,0,.02) 7px);
+  padding:1rem .85rem 1.1rem;
+  margin:1.1rem 0 1.3rem;
   position:relative;
 }
 .ticket:before,.ticket:after{
   content:"";position:absolute;left:0;right:0;height:8px;
-  background:radial-gradient(circle, transparent 4px, #f4f0e4 5px) 0 0/12px 8px;
+  background:radial-gradient(circle, var(--paper) 4px, #f4f0e4 5px) 0 0/12px 8px;
 }
-.ticket:before{top:-8px;background:radial-gradient(circle, var(--paper) 4px, #f4f0e4 5px) 0 0/12px 8px}
-.ticket:after{bottom:-8px;transform:rotate(180deg);background:radial-gradient(circle, var(--paper) 4px, #f4f0e4 5px) 0 0/12px 8px}
-.ticket h3{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;margin:0 0 .7rem;text-align:center}
-.ticket .row{display:flex;justify-content:space-between;gap:.8rem;border-bottom:1px dashed #ccc;padding:.18rem 0}
-.ticket .tot{border-top:2px dashed #111;border-bottom:none;margin-top:.5rem;padding-top:.45rem;font-weight:600;font-size:.95rem}
-.ticket .muted{color:#666}
-.hero-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:1.1rem 0 1.4rem;
+.ticket:before{top:-8px}
+.ticket:after{bottom:-8px;transform:rotate(180deg)}
+.ticket .head{
+  text-align:center;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  margin:0 0 .8rem;font-weight:600;
 }
-.stat{
-  background:var(--card);border:1px solid var(--rule);padding:.75rem .85rem;
+.t-item{border-bottom:1px dashed #c8c0b0;padding:.7rem 0 .65rem}
+.t-item:last-of-type{border-bottom:0}
+.t-name{
+  font-family:"IBM Plex Sans",sans-serif;
+  font-size:.95rem;font-weight:500;line-height:1.25;margin:0 0 .45rem;
+  overflow-wrap:anywhere;
 }
-.stat b{
-  display:block;font-family:"IBM Plex Mono",monospace;
-  font-size:clamp(1.35rem,5vw,1.85rem);font-weight:600;letter-spacing:-.03em;line-height:1.1;
+.t-cols{
+  display:grid;
+  grid-template-columns:1fr 1fr max-content;
+  gap:.5rem;
+  align-items:end;
 }
-.stat span{display:block;font-size:.78rem;color:var(--mute);margin-top:.25rem}
-.stat.up b{color:var(--red)}
-.stat.down b{color:var(--green)}
-.stat.blue b{color:var(--blue)}
+.t-cols small{
+  display:block;font-size:.65rem;color:#666;letter-spacing:.04em;
+  text-transform:uppercase;margin-bottom:.12rem;
+  font-family:"IBM Plex Sans",sans-serif;
+}
+.t-cols b{font-size:1.05rem;font-weight:600;letter-spacing:-.02em}
+.t-pct{text-align:right;padding-left:.15rem;white-space:nowrap}
+.t-pct b{font-size:1.02rem}
+.up{color:var(--red)}
+.down{color:var(--green)}
+.t-foot{
+  border-top:2px dashed #111;margin-top:.35rem;padding-top:.7rem;
+}
+.t-foot .t-name{font-weight:600}
+
+/* lists instead of cramped svg */
+.rank{list-style:none;margin:1rem 0 1.3rem;padding:0}
+.rank li{
+  background:var(--card);border:1px solid var(--rule);
+  padding:.7rem .75rem .6rem;margin:0 0 .45rem;
+}
+.rank .nm{font-weight:500;margin:0 0 .35rem;line-height:1.25}
+.rank .nums{
+  display:grid;grid-template-columns:1fr auto 1fr auto;
+  gap:.35rem;align-items:end;font-family:"IBM Plex Mono",monospace;font-size:.92rem;
+}
+.rank .nums small{
+  display:block;font-family:"IBM Plex Sans",sans-serif;font-size:.65rem;
+  color:var(--mute);text-transform:uppercase;letter-spacing:.04em;
+}
+.rank .arr{color:var(--mute);padding-bottom:.05rem;text-align:center}
+.rank .bar{height:6px;background:#e4d8bc;margin-top:.45rem;overflow:hidden}
+.rank .bar i{display:block;height:100%;background:var(--red)}
+.rank .bar i.ok{background:var(--green)}
+
+.bars{margin:1rem 0 1.3rem}
+.barrow{margin:0 0 .7rem}
+.barrow .lab{
+  display:flex;justify-content:space-between;gap:.6rem;
+  font-size:.88rem;margin:0 0 .25rem;
+}
+.barrow .lab b{font-family:"IBM Plex Mono",monospace;font-weight:600;white-space:nowrap}
+.track{height:12px;background:#e4d8bc;position:relative}
+.track i{display:block;height:100%;background:var(--blue)}
+
+.disp{margin:1rem 0 1.3rem}
+.disp .row{margin:0 0 .7rem}
+.disp .lab{font-size:.88rem;margin:0 0 .2rem}
+.disp .lab span{color:var(--mute);font-size:.78rem}
+.dtrack{height:10px;background:#e4d8bc;position:relative}
+.dtrack i{
+  position:absolute;top:0;height:100%;background:rgba(0,61,122,.4);
+}
+.dtrack b{
+  position:absolute;top:-3px;width:3px;height:16px;background:var(--red);
+}
+
+.pairlist{margin:1rem 0 1.3rem}
+.pair{
+  background:var(--card);border:1px solid var(--rule);
+  padding:.7rem .75rem;margin:0 0 .45rem;
+}
+.pair h3{font-family:"IBM Plex Sans",sans-serif;font-size:.95rem;margin:0 0 .4rem;font-weight:600}
+.pair .grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:.4rem;
+  font-size:.88rem;
+}
+.pair .grid small{display:block;color:var(--mute);font-size:.7rem}
+.pair .gap{
+  margin-top:.4rem;font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600;
+}
+
+.size{margin:1rem 0 1.3rem}
+.size .row{
+  display:grid;grid-template-columns:1fr auto;gap:.6rem;align-items:baseline;
+  padding:.55rem 0;border-bottom:1px solid var(--rule);
+}
+.size .how{font-size:.78rem;color:var(--mute);margin-top:.15rem}
+
 .chart{
   background:var(--card);border:1px solid var(--rule);
-  padding:.7rem .55rem .4rem;margin:1.1rem 0 1.4rem;
+  padding:.65rem .45rem .35rem;margin:1rem 0 1.2rem;
 }
 .chart svg{display:block;width:100%;height:auto}
-.chart .cap{font-size:.75rem;color:var(--mute);padding:.15rem .4rem .35rem}
-.legend{display:flex;flex-wrap:wrap;gap:.55rem 1rem;font-size:.78rem;color:var(--mute);padding:0 .4rem .4rem}
-.legend i{display:inline-block;width:.7rem;height:.7rem;margin-right:.3rem;vertical-align:-1px}
-.hours{
-  display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1.1rem 0;
-}
-.hours .col{background:var(--card);border:1px solid var(--rule);padding:.8rem}
-.hours h3{margin:.1rem 0 .5rem;font-size:.95rem}
+.cap{font-size:.8rem;color:var(--mute);padding:.2rem .35rem .45rem;line-height:1.35}
+
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin:1rem 0}
+.hours .col{background:var(--card);border:1px solid var(--rule);padding:.75rem}
+.hours h3{font-family:"IBM Plex Sans",sans-serif;font-size:.88rem;margin:0 0 .45rem;font-weight:600}
 .blocks{display:flex;flex-wrap:wrap;gap:3px}
-.blocks b{
-  width:14px;height:14px;background:var(--red);display:block;
-}
+.blocks b{width:13px;height:13px;background:var(--red);display:block}
 .blocks b.now{background:var(--blue)}
 .blocks b.frac{opacity:.4}
+
 .heat{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(9.2rem,1fr));
-  gap:.45rem;margin:1rem 0 1.4rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:.4rem;margin:1rem 0 1.3rem;
 }
-.heat .cell{
-  background:var(--card);border:1px solid var(--rule);padding:.55rem .6rem .5rem;
-  min-height:6.4rem;
-}
-.heat .cell strong{display:block;font-size:.84rem;line-height:1.2;margin:0 0 .35rem}
-.heat .n{font-family:"IBM Plex Mono",monospace;font-size:.92rem;font-weight:600}
+.heat .cell{border:1px solid var(--rule);padding:.55rem .6rem}
+.heat strong{display:block;font-size:.84rem;line-height:1.2;margin:0 0 .3rem}
+.heat .n{font-family:"IBM Plex Mono",monospace;font-size:.9rem;font-weight:600}
 .heat .u{font-size:.7rem;color:var(--mute)}
-.table-wrap{overflow-x:auto;margin:1rem 0 1.4rem;border:1px solid var(--rule);background:var(--card)}
+
+.table-wrap{overflow-x:auto;margin:1rem 0 1.3rem;border:1px solid var(--rule);background:var(--card)}
 table{border-collapse:collapse;width:100%;font-size:.86rem}
-th,td{text-align:left;padding:.4rem .55rem;border-bottom:1px solid var(--rule);vertical-align:top}
-th{font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);font-weight:600}
+th,td{text-align:left;padding:.42rem .55rem;border-bottom:1px solid var(--rule)}
+th{font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;color:var(--mute);font-weight:600}
 td.num,th.num{text-align:right;font-family:"IBM Plex Mono",monospace;white-space:nowrap}
-.up{color:var(--red);font-weight:600}
-.down{color:var(--green);font-weight:600}
-.tag{
-  display:inline-block;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;
-  font-weight:600;background:var(--yellow);padding:.12rem .4rem;margin-left:.2rem;
+
+footer{font-size:.8rem;color:var(--mute);border-top:1px solid var(--rule);padding:1.1rem 0 0;margin-top:2rem}
+
+@media (max-width:520px){
+  .hours{grid-template-columns:1fr}
+  .rank .nums{grid-template-columns:1fr 1fr; }
+  .rank .arr{display:none}
+  .rank .nums .pct{grid-column:1/-1;text-align:left;padding-top:.15rem}
 }
-.pair{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.45rem 0;border-bottom:1px solid var(--rule)}
-.pair .l{font-size:.92rem}
-.pair .r{font-family:"IBM Plex Mono",monospace;font-weight:600;white-space:nowrap}
-footer{font-size:.8rem;color:var(--mute);border-top:1px solid var(--rule);padding:1.2rem 0 0;margin-top:2.2rem}
-@media (max-width:420px){
-  body{font-size:17px}
-  .hero-grid,.hours{grid-template-columns:1fr}
+@media (max-width:380px){
+  .hero{grid-template-columns:1fr}
+  .heat{grid-template-columns:1fr}
+  .t-cols{grid-template-columns:1fr 1fr}
+  .t-pct{grid-column:1/-1;text-align:left;padding:.25rem 0 0}
 }
 </style>
 </head>
 <body>
 <nav>
   <ul>
-    <li><a href="#cesta">Cesta</a></li>
+    <li><a href="#cesta">Ticket</a></li>
     <li><a href="#subio">Qué subió</a></li>
     <li><a href="#ipc">IPC</a></li>
     <li><a href="#horas">Horas</a></li>
-    <li><a href="#gancho">Gancho</a></li>
-    <li><a href="#blanca">Blanca</a></li>
-    <li><a href="#formato">Formato</a></li>
-    <li><a href="#euro">Euro</a></li>
-    <li><a href="#pasillos">Pasillos</a></li>
-    <li><a href="#kcal">Kcal</a></li>
+    <li><a href="#blanca">Marca blanca</a></li>
+    <li><a href="#formato">Pack grande</a></li>
+    <li><a href="#euro">El 0,99</a></li>
+    <li><a href="#kcal">Comida barata</a></li>
   </ul>
 </nav>
 <main class="wrap">
-<p class="kicker">Precios de supermercado · 2003 → 2026</p>
+<p class="kicker">2003 y ahora</p>
 <h1>El súper del 6 de enero de 2003</h1>
-<p class="deck">Ese día Jaime Obregón se bajó el catálogo entero de Carrefour y Eroski. 17.149 precios, un año después de que el euro llegara a las cajas. Los hemos puesto al lado de Mercadona de ahora y del IPC del INE.</p>
-<p class="meta">Catálogo: 6 ene 2003 (Carrefour y Eroski) · Hoy: ago 2026 (Mercadona, Madrid) · IPC: INE ene 2003 – jul 2026</p>
+<p class="deck">Ese día Jaime Obregón se bajó el catálogo entero de Carrefour y Eroski. 17.149 precios. El euro llevaba un año en las cajas.</p>
+<p class="meta">Entonces: Carrefour y Eroski, 6 ene 2003. Ahora: Mercadona Madrid, ago 2026. Inflación oficial: INE, ene 2003 a jul 2026.</p>
 
-<p>Antes de los gráficos, una cosa importante: <strong>no es el mismo súper</strong>. Entonces Carrefour y Eroski. Ahora Mercadona, que suele ser más barato. Si tu casa compraba en Carrefour y sigue comprando en Carrefour, la subida que habéis notado es casi seguro mayor que la que sale aquí.</p>
+<p>Hay un truco en la comparación. Entonces es Carrefour y Eroski. Ahora es Mercadona, que suele ser más barato. Si en tu casa se compraba en Carrefour y se sigue comprando en Carrefour, lo que habéis notado es casi seguro peor que lo que sale aquí.</p>
 
-<div class="hero-grid">
-  <div class="stat up"><b id="h-ipc"></b><span>IPC oficial desde ene 2003</span></div>
-  <div class="stat up"><b id="h-food"></b><span>IPC de los alimentos</span></div>
-  <div class="stat"><b id="h-basket"></b><span>Nuestra cesta (marca blanca, más o menos)</span></div>
-  <div class="stat down"><b id="h-hours"></b><span>Horas de salario mínimo para pagarla</span></div>
+<div class="hero">
+  <div class="stat up"><b id="h-ipc"></b><span>Lo que dice el INE que ha subido la vida</span></div>
+  <div class="stat up"><b id="h-food"></b><span>Lo que dice el INE que ha subido la comida</span></div>
+  <div class="stat"><b id="h-basket"></b><span>Esta lista de 12 cosas, marca blanca contra marca blanca</span></div>
+  <div class="stat down"><b id="h-hours"></b><span>Horas de sueldo mínimo para pagarla</span></div>
 </div>
 
-<h2 id="cesta">La cesta, en un ticket</h2>
-<p>Misma lista. Izquierda, lo más parecido que había en Carrefour o Eroski en 2003. Derecha, Mercadona ahora. Casi todo es marca blanca contra marca blanca, salvo la Coca-Cola y el pollo/ternera, que son pieza contra pieza.</p>
+<h2 id="cesta">El ticket</h2>
+<p>Misma lista en los dos años. Casi todo es marca blanca de entonces contra Hacendado o Deliplus de ahora. La Coca-Cola y la carne van producto contra producto.</p>
 <div class="ticket" id="ticket"></div>
-<p class="note">El azúcar está más barato. El gel de baño de marca blanca también. Los huevos se han puesto del revés. La pechuga de pollo, en euros el kilo, casi no se ha movido.</p>
+<p class="note" id="ticket-note"></p>
 
-<h2 id="subio">Qué se ha puesto caro de verdad</h2>
-<p>El IPC mezcla el aceite con el iPhone. Aquí van productos sueltos, de más a menos. La lata de Coca-Cola es la que más ha subido en porcentaje: de 0,35 € a 0,95 €. El gel Deliplus, en cambio, está más barato que el Carrefour de entonces.</p>
-<div class="chart">
-  <svg id="slope" viewBox="0 0 640 720" role="img" aria-label="Cambio de precio 2003-2026 por producto"></svg>
-  <div class="cap">Cada línea es un producto. Izquierda 2003, derecha 2026. Rojo = sube, verde = baja. Precios en euros del envase o del kilo, según pone la etiqueta.</div>
+<h2 id="subio">De más a menos</h2>
+<p>El INE mezcla el aceite con el móvil. Abajo van productos sueltos. El porcentaje es: cuánto más (o menos) cuesta hoy que en 2003.</p>
+<ol class="rank" id="rank"></ol>
+<p>Los huevos y la pasta se han puesto feos. La lata de Coca-Cola, de 35 céntimos a 95. El aceite de oliva 0,4º ha subido como el IPC general, un 71%. La pechuga de pollo el kilo casi no se ha movido. El azúcar está más barato. El gel Deliplus sale más barato que el gel Carrefour de entonces.</p>
+<p>Las naranjas no las pongo en esta lista. El catálogo viejo es de enero (temporada) y el de ahora es de agosto. Eso no es inflación, es el mes.</p>
+
+<h2 id="ipc">¿Y el número oficial?</h2>
+<p>El INE tiene un índice, el IPC, que sigue unos mil productos con el peso de lo que compra la gente. De enero de 2003 a julio de 2026 ese índice subió un 70,6%. El trozo de comida, un 95%.</p>
+<p>Esta cesta subió un <span id="basket-pct"></span>. El INE mide otra cosa. Su IPC de comida mete pescado fresco, fruta de fuera de temporada, mantequilla, marcas que Mercadona ni tiene, y el aceite en 2023 y 2024, cuando se puso imposible. Aquí hay sobre todo básicos de marca blanca en el súper barato de 2026. El 0,4º de Hacendado está hoy a 3,80 € el litro. En Carrefour era 2,22 €. Un 71%.</p>
+
+<div class="hero" style="grid-template-columns:1fr 1fr">
+  <div class="stat"><b>100 → 171</b><span>IPC general (2003 = 100)</span></div>
+  <div class="stat up"><b>100 → 195</b><span>IPC comida</span></div>
+  <div class="stat down"><b>100 → 271</b><span>Sueldo mínimo</span></div>
+  <div class="stat"><b id="cesta-idx"></b><span>Esta cesta</span></div>
 </div>
-<p>Si agrupas: <strong>huevos, pasta y refrescos</strong> se han comido el carro. Aceite, leche y arroz han subido parecido al IPC general (70%). Carne de pollo, azúcar e higiene blanca se han quedado atrás — o han bajado.</p>
-<p>Ojo con las naranjas (+100%): el catálogo de 2003 es de enero, temporada. El de ahora es de agosto. Eso no es inflación, es el calendario.</p>
-
-<h2 id="ipc">¿Coincide con el IPC?</h2>
-<p>No del todo, y hay motivo.</p>
-<p>El INE dice que desde enero de 2003 hasta julio de 2026 los precios en general subieron un <strong>70,6%</strong>. La comida, un <strong>95%</strong>. Nuestra cesta, un <strong id="basket-pct"></strong>. Eso no significa que el INE mienta. Significa que esta cesta no es la suya.</p>
-<ul>
-  <li>El IPC de alimentos incluye pescado fresco, fruta fuera de temporada, mantequilla, aceite en los años locos de 2023-24, y marcas que Mercadona ni vende.</li>
-  <li>Nosotros estamos mirando, sobre todo, básicos de marca blanca en el súper barato de 2026.</li>
-  <li>El aceite de oliva llegó a ponerse por las nubes en 2024 y luego bajó. Hoy el 0,4º de Hacendado está a 3,80 €/L. En 2003 el de Carrefour estaba a 2,22 €. Subida del 71%, no del 200%.</li>
-</ul>
 <div class="chart">
-  <svg id="ipcchart" viewBox="0 0 640 280" role="img" aria-label="IPC, alimentos y salario mínimo desde 2003"></svg>
-  <div class="legend">
-    <span><i style="background:#003d7a"></i>IPC general</span>
-    <span><i style="background:#c8102e"></i>IPC alimentos</span>
-    <span><i style="background:#2c5a38"></i>SMI</span>
-    <span><i style="background:#f0c400"></i>Nuestra cesta (2 puntos)</span>
-  </div>
-  <div class="cap">2003 = 100. El IPC y los alimentos son Eurostat (promedio anual) hasta 2025, y el punto de 2026 es el INE (ene 2003 – jul 2026). El SMI es la cifra mensual oficial de cada año.</div>
+  <svg id="ipcchart" viewBox="0 0 640 300" role="img" aria-label="Cómo han subido el IPC, la comida y el sueldo mínimo"></svg>
+  <p class="cap">Si en 2003 valía 100. La raya verde es el sueldo mínimo. La roja es la comida oficial. La azul es el IPC general. La amarilla es esta cesta: solo tenemos el principio y el final, no los años de en medio.</p>
 </div>
-<p>Lo que sí cuadra: la comida oficial ha subido más que “la vida” en general. Ropa casi nada. Teléfonos, de hecho, han bajado. Quien gasta casi todo en comer nota otra inflación que quien se compra un portátil.</p>
-
+<p>La comida oficial ha subido más que el índice general. La ropa, casi nada. Los teléfonos, a la baja. Quien se deja el sueldo en el súper no vive la misma inflación que quien se compra un portátil.</p>
 <div class="table-wrap">
 <table id="ipc-table">
-<thead><tr><th>Grupo INE</th><th class="num">Ene 2003 → jul 2026</th></tr></thead>
+<thead><tr><th>Qué mira el INE</th><th class="num">Subida</th></tr></thead>
 <tbody></tbody>
 </table>
 </div>
 
 <h2 id="horas">Cuántas horas hay que currar</h2>
-<p>Los euros mienten un poco. En 2003 el salario mínimo eran <strong>451,20 € al mes</strong> (14 pagas: 6.317 € al año). Hoy son <strong>1.221 €</strong> en 14 pagas: 17.094 € al año. Eso es un 171% más. La cesta, un 45% más.</p>
-<p>Si curras 40 horas a la semana todo el año, el SMI de 2003 eran <strong>3,04 € la hora</strong>. Hoy, <strong>8,22 €</strong>.</p>
-<p>Nuestra cesta pedía entonces <strong id="h1"></strong> horas de SMI. Hoy pide <strong id="h2"></strong>. Casi la mitad de rato.</p>
+<p>Hablar de euros engaña, porque el sueldo también ha cambiado. En 2003 el mínimo era 451,20 € al mes. En 14 pagas, 6.317 € al año. Hoy son 1.221 € en 14 pagas: 17.094 € al año. Un 171% más. La cesta, un 45% más.</p>
+<p>A 40 horas por semana todo el año, el mínimo de 2003 eran 3,04 € la hora. Hoy, 8,22 €.</p>
+<p>Esta lista pedía entonces <span id="h1"></span> horas de mínimo. Hoy pide <span id="h2"></span>. La mitad de rato, más o menos.</p>
 <div class="hours">
   <div class="col">
-    <h3>2003 · cada cuadrado = 1 h de SMI</h3>
+    <h3>2003. Cada cuadrado es una hora de sueldo mínimo.</h3>
     <div class="blocks" id="blocks-then"></div>
-    <p class="small" id="blocks-then-cap"></p>
+    <p class="note" id="blocks-then-cap"></p>
   </div>
   <div class="col">
     <h3>2026</h3>
     <div class="blocks" id="blocks-now"></div>
-    <p class="small" id="blocks-now-cap"></p>
+    <p class="note" id="blocks-now-cap"></p>
   </div>
 </div>
-<p>Con una hora de SMI en 2003 te llevabas <strong id="milk-then"></strong> litros de leche entera de marca blanca. Hoy, <strong id="milk-now"></strong> litros. El suelo salarial ha subido más que esta comida.</p>
-<p>El sueldo <em>medio</em> es otra historia. La encuesta de estructura salarial del INE: 19.802 € brutos en 2002, 29.540 € en 2024. Un 49% más. Casi calzado con esta cesta (+45%), por debajo del IPC general (+71%) y lejos del IPC de los alimentos (+95%). El SMI ha cerrado hueco. El sueldo del medio, no tanto.</p>
-<p class="note">Cifras de SMI: 14 pagas, 40 h × 52 semanas = 2.080 h/año. El sueldo medio es ganancia bruta anual INE (EES 2002 y EAES 2024). No es exactamente el mismo recorte de encuesta, así que el 49% va con pinzas.</p>
+<p>Con una hora de mínimo, en 2003 te llevabas <span id="milk-then"></span> litros de leche entera blanca. Hoy, <span id="milk-now"></span> litros.</p>
+<p>El sueldo medio es otra cosa. El INE: 19.802 € brutos en 2002, 29.540 € en 2024. Un 49% más. Casi lo mismo que esta cesta. Por debajo del IPC general (71%) y lejos de la comida oficial (95%). El mínimo ha cerrado hueco. El sueldo del medio, no tanto.</p>
+<p class="note">El mínimo lo cuento en 14 pagas y 2.080 horas al año (40 × 52). El sueldo medio es la ganancia bruta anual del INE. Las dos encuestas no están cortadas igual, así que el 49% va con pinzas.</p>
 
-<h2 id="gancho">Productos gancho y pasillos anchos</h2>
-<p>En el súper hay cosas cuyo precio todo el mundo se sabe (leche, aceite, azúcar, pasta) y cosas que nadie compara (colonia, jamón, vino). A las primeras se las llama a veces “gancho”: las ponen baratas para que entres. A las segundas se les saca el margen.</p>
-<p>Una forma tosca de verlo en 2003: mirar si en una categoría todos los precios se parecen (poca dispersión) o si hay de todo (mucha). Ojo, mucha dispersión no es siempre margen. En embutido estás mezclando mortadela con jamón de bellota. Eso no es truco, es que no son el mismo producto.</p>
-<div class="chart">
-  <svg id="disp" viewBox="0 0 640 420" role="img" aria-label="Dispersión de precios por categoría en 2003"></svg>
-  <div class="cap">Cada barra va del percentil 25 al 75 del precio del envase en 2003. El palito es la mediana. Categorías con al menos 25 productos. El “resto” del híper (ropa, menaje, etc.) no entra aquí.</div>
-</div>
-<p>Lo más apretado: yogur, bollería, arroz, pasta, pan. Lo más abierto: embutido, fruta, alcohol, queso. La leche sale abierta porque en el catálogo se cuelan leches de calcio, de crecimiento y de cabra junto al brik de un euro.</p>
+<h2 id="gancho">Lo barato que todo el mundo mira</h2>
+<p>Hay productos cuyo precio se sabe de memoria: leche, aceite, azúcar, pasta. El súper no puede inflarlos mucho porque se nota. Hay otros que nadie compara: colonia, jamón, vino. Ahí cabe más margen.</p>
+<p>En el catálogo de 2003 se ve así: en pasta, arroz o pan, casi todos los envases costaban parecido. En embutido, fruta, alcohol o queso, había de todo. Ojo, eso no es siempre un truco. En embutido estás mezclando mortadela con jamón de bellota. No son el mismo producto.</p>
+<div class="disp" id="disp"></div>
+<p class="cap">La raya grisácea cubre lo que costaba la mayoría de envases de esa sección (de lo barato a lo caro). El palito rojo es el precio del medio. Solo secciones con bastante producto. El híper también vendía colchones y ropa: eso no entra.</p>
+<p>La leche sale ancha porque en el archivo se cuelan leches de calcio, de crecimiento y de cabra junto al brik de un euro.</p>
 
-<h2 id="blanca">Marca blanca contra marca</h2>
-<p>En 2003 Carrefour ya tenía marca propia (se llamaba Carrefour, más “De Nuestra Tierra” y “Calidad Tradición”). Eroski tenía Consumer. Hoy en Mercadona es Hacendado, Deliplus, Bosque Verde.</p>
-<p>La leche entera de marca blanca: <strong>0,62 €</strong> el litro en Carrefour. Pascual, <strong>0,71 €</strong>. Un 15% más. Hoy Hacendado está a <strong>0,96 €</strong> y Asturiana a <strong>1,29 €</strong>: un 34% más. La brecha de la leche se ha abierto.</p>
-<p>La cola es más salvaje. En 2003 la Coca-Cola de 2 L valía 1,10 €. Hoy, 1,99 €. La cola Hacendado de 2 L sale a 0,80 €: más barata, en euros corrientes, que la Coca de 2003. Quien bebe blanca casi no ha notado inflación. Quien quiere el logo, sí.</p>
-<div class="chart">
-  <svg id="gaps" viewBox="0 0 640 320" role="img" aria-label="Brecha marca blanca vs marca"></svg>
-  <div class="cap">2003: mediana de precio unitario marca blanca vs marca, en el catálogo de entonces. 2026: parejas concretas en Mercadona (Hacendado/Deliplus vs Asturiana, Danone, Coca-Cola, Colgate).</div>
+<h2 id="blanca">Marca blanca y marca de verdad</h2>
+<p>En 2003 Carrefour ya tenía marca propia (se llamaba Carrefour). Eroski tenía Consumer. Hoy en Mercadona es Hacendado, Deliplus y Bosque Verde.</p>
+<div class="pairlist">
+  <div class="pair">
+    <h3>Leche entera, 1 litro</h3>
+    <div class="grid">
+      <div><small>2003 blanca / Pascual</small>0,62 € / 0,71 €</div>
+      <div><small>2026 Hacendado / Asturiana</small>0,96 € / 1,29 €</div>
+    </div>
+    <div class="gap">La marca era un 15% más cara. Ahora, un 34%.</div>
+  </div>
+  <div class="pair">
+    <h3>Cola, 2 litros</h3>
+    <div class="grid">
+      <div><small>Coca-Cola 2003</small>1,10 €</div>
+      <div><small>Coca-Cola hoy / Hacendado hoy</small>1,99 € / 0,80 €</div>
+    </div>
+    <div class="gap">La cola blanca de ahora es más barata, en euros de ahora, que la Coca de 2003.</div>
+  </div>
 </div>
-<p>En yogur la brecha ya era enorme entonces y sigue siéndolo (Danone casi el doble que Hacendado). En galletas y refrescos, la blanca de 2003 ya era tirada. El truco no es nuevo. Lo que ha cambiado es que ahora hay un súper entero construido alrededor de esa blanca.</p>
+<div id="gaps" class="pairlist"></div>
+<p>En yogur la diferencia ya era gorda y sigue siéndolo: Danone casi el doble que Hacendado. En galletas y refrescos, la blanca de 2003 ya era tirada. No es un invento de ahora. Lo nuevo es que hay un súper entero montado alrededor de esa blanca.</p>
 
-<h2 id="formato">¿Salía a cuenta el formato familiar?</h2>
-<p>Depende de qué. El mito dice que el pack grande es más barato el kilo. En el aceite de oliva 0,4º de 2003, <strong>no</strong>.</p>
-<p>Misma marca, botella de 1 L contra garrafa de 5 L: la garrafa salía, de mediana, un 1% <em>más cara</em> el litro. El 5 L de Carrefour estaba a 11 € (2,20 €/L) y el litro a 2,22 €. Te ahorrabas dos céntimos y arrastrabas cinco litros.</p>
-<p>Hoy el Hacendado sí descuenta un poco: 3,80 € el litro, 3,55 €/L la garrafa. Un 7%.</p>
-<div class="chart">
-  <svg id="size" viewBox="0 0 640 260" role="img" aria-label="Ahorro del formato grande en 2003"></svg>
-  <div class="cap">Porcentaje que ahorrabas (o perdías) comprando el formato grande, en €/litro, €/kilo o €/huevo. Barra a la izquierda = el grande era más caro.</div>
-</div>
-<p>Donde sí merecía la pena: la Coca-Cola. La lata salía al doble de precio el litro que la botella de 2 L. Los huevos, un 20% más baratos la unidad en docena que en media docena. La pasta de 500 g, bastante más barata el kilo que la de 250 g — aunque parte de esos 250 g eran pastas “de dibujos”, más caras de por sí.</p>
+<h2 id="formato">¿Salía a cuenta el pack grande?</h2>
+<p>El mito: el formato familiar es más barato el litro o el kilo. En el aceite de oliva 0,4º de 2003, no.</p>
+<p>Misma marca, botella de 1 L contra garrafa de 5 L: la garrafa salía un 1% más cara el litro. El 5 L de Carrefour estaba a 11 € (2,20 €/L) y el litro a 2,22 €. Te ahorrabas dos céntimos y te llevabas cinco litros a casa.</p>
+<p>Hoy Hacendado sí descuenta un poco: 3,80 € el litro suelto, 3,55 €/L la garrafa. Un 7%.</p>
+<div class="size" id="size"></div>
+<p>Donde sí merecía la pena: la Coca-Cola. La lata salía el doble de cara el litro que la botella de 2 L. Los huevos, un 20% más baratos la unidad en docena que en media docena. La pasta de 500 g, más barata el kilo que la de 250 g, aunque parte de esos 250 g eran pastas de dibujos, más caras de por sí.</p>
 
-<h2 id="euro">El euro y los precios raros</h2>
-<p>Las monedas y los billetes de euro empezaron a circular el 1 de enero de 2002. Este catálogo es de un año después. La gente juraba que todo se había ido a 0,99 € o a números redondos. ¿Se ve en los datos?</p>
-<p>Un poco, no un atraco. De 13.316 precios distintos, el final <strong>.99</strong> es el más repetido: un 2,8%. Si los céntimos fueran a voleo, cada uno saldría un 1%. El <strong>.95</strong> sale un 2,1%. El <strong>.00</strong>, un 1,2% — ni siquiera destaca.</p>
+<h2 id="euro">El euro y el 0,99</h2>
+<p>Las monedas de euro empezaron a circular el 1 de enero de 2002. Este catálogo es de un año después. La historia de entonces: todo se fue a 0,99 o a números redondos.</p>
+<p>Se ve un poco, no un atraco. De 13.316 precios, el que más se repite acaba en ,99: un 2,8%. Si los céntimos cayeran a voleo, cada uno saldría un 1%. El ,95 sale un 2,1%. El ,00, un 1,2%, y ni siquiera destaca.</p>
 <div class="chart">
-  <svg id="cents" viewBox="0 0 640 220" role="img" aria-label="Histograma de céntimos de euro en 2003"></svg>
-  <div class="cap">Cuántos productos terminaban en cada céntimo, de ,00 a ,99. La raya gris es lo que saldría si fuera puro azar (1,00% cada uno).</div>
+  <svg id="cents" viewBox="0 0 640 230" role="img" aria-label="En qué céntimo acababan los precios de 2003"></svg>
+  <p class="cap">Cada palito es un céntimo, de ,00 a ,99. Lo alto que es dice cuántos productos acababan así. La raya de puntos es el azar (un 1% cada uno). En rojo: ,00, ,95 y ,99.</p>
 </div>
-<p>Eroski publicaba el precio en euros y en pesetas. El cambio oficial es 1 € = 166,386 pts. En este catálogo la diferencia media entre la peseta impresa y esa cuenta es de <strong>0,25 pesetas</strong>. O sea: no estaban redondeando a lo bruto. Estaban convirtiendo y punto.</p>
-<p>Lo que ves en el histograma — montones en 25, 35, 45, 75, 85 — parece más basura de dividir pesetas que una estrategia de 0,99. El 0,99 ya estaba, pero no se había comido el lineal.</p>
+<p>Eroski ponía el precio en euros y en pesetas. El cambio oficial es 1 € = 166,386 pts. En este catálogo, la peseta impresa y esa cuenta se desvían de media 0,25 pesetas. No estaban redondeando a lo bruto. Estaban convirtiendo y punto.</p>
+<p>Los montones en ,25, ,35, ,45, ,75, ,85 parecen restos de dividir pesetas, no una estrategia de 0,99. El 0,99 ya estaba. No se había comido el lineal.</p>
 
 <h2 id="pasillos">Qué pasillo era el caro</h2>
-<p>Si miras lo que pone el ticket (el envase, no el kilo), en 2003 lo más caro de mediana era <strong>higiene y perfume</strong> y <strong>bebidas</strong> (ahí va el vino). Lo más barato, zumos y el pasillo dulce.</p>
-<p>Si miras euros por kilo o por litro, cambia el cuento: el fresco (carne, pescado) y los lácteos curados se ponen arriba. Un vino de 4 € es “barato” el envase y caro el litro. Un pollo es al revés.</p>
-<div class="chart">
-  <svg id="depts" viewBox="0 0 640 280" role="img" aria-label="Mediana de precio por pasillo"></svg>
-  <div class="cap">Mediana del precio del envase, 2003. Higiene incluye colonias. Bebidas incluye alcohol.</div>
-</div>
+<p>Si miras lo que pone el ticket (el envase, no el kilo), en 2003 lo más caro de mediana era higiene y perfume, y bebidas (ahí va el vino). Lo más barato: zumos y el pasillo dulce.</p>
+<p>Si miras euros el kilo, cambia. Carne, pescado y quesos se ponen arriba. Un vino de 4 € es barato el envase y caro el litro. Un pollo es al revés.</p>
+<div class="bars" id="depts"></div>
+<p class="cap">Precio del medio de cada envase en 2003. Higiene incluye colonias. Bebidas incluye alcohol.</p>
 
-<h2 id="kcal">Lo caro no es lo que pesa, es lo que alimenta</h2>
-<p>Precios de 2003, por 100 kcal y por 10 g de proteína. Los números de nutrición son de tabla (BEDCA/USDA), no del envase. Sirve para ordenar, no para una dieta.</p>
+<h2 id="kcal">Qué llenaba más por el dinero</h2>
+<p>Precios de 2003, ordenados por lo que te cuesta cada 100 calorías. Los datos de calorías y proteína salen de tablas de nutrición, no del envase. Sirve para ordenar, no para hacer una dieta.</p>
 <div class="heat" id="heat"></div>
-<p>El aceite es tirado si lo que quieres es energía: casi no cuesta nada cada caloría, y cero proteína. Las lentejas y el arroz eran (y son) el truco. La ternera, el atún en lata y la pechuga salen caras de caloría y más razonables de proteína. El chocolate, para poner proteína, es de broma.</p>
-<p class="note">Un chaval de 15: si tienes poco dinero y quieres no quedarte vacío, en 2003 el ranking era lentejas, arroz, pasta, huevos, muslo de pollo. La pechuga ya era capricho. El filete, más.</p>
+<p>El aceite era tirado si lo que querías era energía: casi no costaba nada cada caloría, y cero proteína. Lentejas, arroz y azúcar, baratos de caloría. La ternera, el atún en lata y la pechuga, caros de caloría y más razonables de proteína. El chocolate, para poner proteína, es de broma.</p>
+<p>Si había poco dinero y no querías quedarte vacío, el orden era lentejas, arroz, pasta, huevos, muslo de pollo. La pechuga ya era capricho. El filete, más.</p>
 
-<h2>Cómo está hecho, y dónde se rompe</h2>
-<p>Catálogo de <a href="https://github.com/JaimeObregon/precios">Jaime Obregón</a>, 6 de enero de 2003, licencia WTFPL. 11.216 líneas Carrefour, 5.933 Eroski; quité duplicados y me quedé 13.316. Precios de ahora: API de tienda.mercadona.es, almacén de Madrid, agosto 2026. IPC: calculadora del INE (ene 2003 – jul 2026) y HICP de Eurostat. SMI: reales decretos. Salario medio: INE.</p>
-<p>El IVA no es el mismo (el reducido de comida ha ido del 7 al 10, con un paréntesis al 0% en 2023; el de higiene del 16 al 21). Los botes se han encogido (el Magno de ahora es de 600 ml, no 750). Una “pechuga de pollo” de Coren en 2003 no es exactamente el filete de Mercadona. El híper de 2003 vendía también colchones y colonias: la mitad del catálogo ni es comida.</p>
-<p>No hay serie temporal en esos CSV. Un solo día. El dibujo de 2003 a 2026 del IPC es el INE, no Jaime. Nuestra cesta son dos fotos.</p>
+<h2>De dónde salen los números</h2>
+<p>Catálogo de <a href="https://github.com/JaimeObregon/precios">Jaime Obregón</a>, 6 de enero de 2003. 11.216 líneas de Carrefour y 5.933 de Eroski. Quité duplicados y me quedé 13.316. Precios de ahora: la tienda online de Mercadona, almacén de Madrid, agosto 2026. IPC: calculadora del INE (enero 2003 a julio 2026) y el índice europeo de Eurostat. Sueldo mínimo: reales decretos. Sueldo medio: INE.</p>
+<p>El IVA no es el mismo. El reducido de comida ha ido del 7 al 10, con un tiempo a 0% en 2023. El de higiene, del 16 al 21. Los botes se han encogido: el Magno de ahora es de 600 ml, no 750. Una pechuga de Coren en 2003 no es exactamente el filete de Mercadona. El híper de 2003 vendía también colchones: la mitad del catálogo ni es comida.</p>
+<p>Esos CSV son un solo día, no una película. El dibujo de 2003 a 2026 del IPC es el INE, no Jaime. La cesta son dos fotos.</p>
 
 <footer>
-  Datos 2003: Jaime Obregón. Datos 2026: Mercadona. IPC: INE / Eurostat. Página: un cruce de esos CSV, sin más magia.
+  2003: Jaime Obregón. 2026: Mercadona. IPC: INE y Eurostat.
 </footer>
 </main>
 <script src="data.js"></script>
 <script>
 (function(){
   const D = window.DATA;
-  const euro = (n,d=2) => (n).toLocaleString("es-ES",{minimumFractionDigits:d,maximumFractionDigits:d})+"\u00a0€";
+  const euro = (n,d=2) => n.toLocaleString("es-ES",{minimumFractionDigits:d,maximumFractionDigits:d})+"\u00a0€";
   const pct = (n,d=0) => (n>=0?"+":"")+n.toLocaleString("es-ES",{maximumFractionDigits:d,minimumFractionDigits:d})+"\u00a0%";
   const num = (n,d=1) => n.toLocaleString("es-ES",{maximumFractionDigits:d,minimumFractionDigits:d});
+  const esc = s => String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+  const short = {
+    "1 L aceite de oliva 0,4º (blanca)": "Aceite de oliva 1 L",
+    "1 L leche entera (blanca)": "Leche entera 1 L",
+    "1 docena huevos M": "Huevos, 12 unidades",
+    "1 kg arroz redondo (blanca)": "Arroz 1 kg",
+    "1 kg azúcar blanco": "Azúcar 1 kg",
+    "500 g macarrones (blanca)": "Macarrones 500 g",
+    "1 L aceite de girasol": "Aceite de girasol 1 L",
+    "2 L Coca-Cola": "Coca-Cola 2 L",
+    "1 kg pechuga de pollo fileteada": "Pechuga de pollo 1 kg",
+    "1 kg filete de ternera/vacuno": "Filete de ternera 1 kg",
+    "Gel de baño 750 ml (blanca)": "Gel de baño 750 ml",
+    "250 g café molido": "Café molido 250 g",
+    "Aceite de oliva 0,4º, 1 L": "Aceite oliva 0,4º 1 L",
+    "Aceite de oliva 0,4º, garrafa 5 L (por litro)": "Aceite oliva, el litro en garrafa",
+    "Aceite de girasol 1 L": "Girasol 1 L",
+    "Aceite de oliva virgen extra, 1 L": "Virgen extra 1 L",
+    "Leche entera, 1 L marca blanca": "Leche blanca 1 L",
+    "Leche entera, 1 L marca (Pascual / Asturiana)": "Leche Pascual / Asturiana",
+    "Huevos medianos, 1 docena": "Huevos (12)",
+    "Arroz redondo, 1 kg": "Arroz 1 kg",
+    "Azúcar blanco, 1 kg": "Azúcar 1 kg",
+    "Macarrones marca blanca, 500 g": "Macarrones 500 g",
+    "Coca-Cola, botella 2 L": "Coca-Cola 2 L",
+    "Coca-Cola, lata 33 cl": "Coca-Cola lata",
+    "Gel de baño marca blanca, 750 ml": "Gel blanca 750 ml",
+    "Gel de baño de marca, ~750 ml": "Gel de marca",
+    "Pechuga de pollo fileteada": "Pechuga de pollo, el kg",
+    "Muslo / jamoncitos de pollo": "Muslo de pollo, el kg",
+    "Filete de ternera / vacuno": "Filete de ternera, el kg",
+    "Café molido, 250 g": "Café 250 g",
+    "Yogur natural (precio por kilo)": "Yogur, el kg"
+  };
+  const nm = s => short[s] || s;
 
   document.getElementById("h-ipc").textContent = pct(D.ipc.ine_general,1);
   document.getElementById("h-food").textContent = pct(D.ipc.ine_food,1);
   document.getElementById("h-basket").textContent = pct(D.basket.pct,0);
   document.getElementById("h-hours").textContent = num(D.hours.smi_h_then,1)+" h → "+num(D.hours.smi_h_now,1)+" h";
   document.getElementById("basket-pct").textContent = pct(D.basket.pct,0);
+  document.getElementById("cesta-idx").textContent = "100 → "+Math.round(100+D.basket.pct);
   document.getElementById("h1").textContent = num(D.hours.smi_h_then,1);
   document.getElementById("h2").textContent = num(D.hours.smi_h_now,1);
   document.getElementById("milk-then").textContent = num(D.milk_per_hour.then,1);
   document.getElementById("milk-now").textContent = num(D.milk_per_hour.now,1);
 
   /* ticket */
-  const tick = document.getElementById("ticket");
-  let html = "<h3>Ticket · cesta de 12 líneas</h3>";
-  html += "<div class='row muted'><span>artículo</span><span>2003 → 2026</span></div>";
-  D.basket.items.forEach(it => {
-    const p = (it.now/it.then-1)*100;
-    html += `<div class="row"><span>${esc(it.name)}</span><span>${euro(it.then)} → ${euro(it.now)} <span class="${p<0?"down":"up"}">${pct(p,0)}</span></span></div>`;
-  });
-  html += `<div class="row tot"><span>TOTAL</span><span>${euro(D.basket.then)} → ${euro(D.basket.now)}  ${pct(D.basket.pct,0)}</span></div>`;
-  html += `<div class="row muted"><span>Horas de SMI</span><span>${num(D.hours.smi_h_then,1)} h → ${num(D.hours.smi_h_now,1)} h</span></div>`;
-  tick.innerHTML = html;
-
-  function esc(s){return String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]))}
-
-  /* slope / dumbbell */
   (function(){
-    const items = D.comparisons.filter(c => c.label.indexOf("Naranjas")===-1);
-    const svg = document.getElementById("slope");
-    const W=640, H=Math.max(520, items.length*34+40);
-    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
-    const padL=210, padR=70, padT=18, padB=10;
-    const vals = items.flatMap(c=>[c.then,c.now]);
-    const max = Math.max(...vals)*1.08;
-    const x = v => padL + (v/max)*(W-padL-padR);
-    let s = `<text x="${x(0)}" y="12" font-size="11" fill="#6a5c4c" font-family="IBM Plex Sans,sans-serif">2003</text>`;
-    items.forEach((c,i)=>{
-      const y = padT+16+i*34;
-      const up = c.now>=c.then;
-      const col = up ? "#c8102e" : "#2c5a38";
-      const lab = c.label.length>38 ? c.label.slice(0,36)+"…" : c.label;
-      s += `<text x="${padL-10}" y="${y+4}" text-anchor="end" font-size="11" font-family="IBM Plex Sans,sans-serif" fill="#1a130c">${esc(lab)}</text>`;
-      s += `<line x1="${x(c.then)}" y1="${y}" x2="${x(c.now)}" y2="${y}" stroke="${col}" stroke-width="2"/>`;
-      s += `<circle cx="${x(c.then)}" cy="${y}" r="4.2" fill="#efe4c8" stroke="#1a130c" stroke-width="1.4"/>`;
-      s += `<circle cx="${x(c.now)}" cy="${y}" r="4.5" fill="${col}"/>`;
-      s += `<text x="${x(c.now)+8}" y="${y+4}" font-size="11" font-family="IBM Plex Mono,monospace" fill="${col}">${pct(c.pct,0)}</text>`;
+    const box = document.getElementById("ticket");
+    let h = "<div class='head'>Ticket · 12 cosas</div>";
+    D.basket.items.forEach(it => {
+      const p = (it.now/it.then-1)*100;
+      const cls = p<0?"down":"up";
+      h += `<div class="t-item">
+        <div class="t-name">${esc(nm(it.name))}</div>
+        <div class="t-cols">
+          <div><small>2003</small><b>${euro(it.then)}</b></div>
+          <div><small>ahora</small><b>${euro(it.now)}</b></div>
+          <div class="t-pct ${cls}"><small>cambio</small><b>${pct(p,0)}</b></div>
+        </div>
+      </div>`;
     });
-    svg.innerHTML = s;
+    const p = D.basket.pct;
+    h += `<div class="t-item t-foot">
+      <div class="t-name">Total</div>
+      <div class="t-cols">
+        <div><small>2003</small><b>${euro(D.basket.then)}</b></div>
+        <div><small>ahora</small><b>${euro(D.basket.now)}</b></div>
+        <div class="t-pct ${p<0?"down":"up"}"><small>cambio</small><b>${pct(p,0)}</b></div>
+      </div>
+    </div>`;
+    h += `<div class="t-item">
+      <div class="t-name">Horas de sueldo mínimo</div>
+      <div class="t-cols">
+        <div><small>2003</small><b>${num(D.hours.smi_h_then,1)} h</b></div>
+        <div><small>ahora</small><b>${num(D.hours.smi_h_now,1)} h</b></div>
+        <div class="t-pct down"><small>cambio</small><b>${pct((D.hours.smi_h_now/D.hours.smi_h_then-1)*100,0)}</b></div>
+      </div>
+    </div>`;
+    box.innerHTML = h;
+    document.getElementById("ticket-note").textContent =
+      "El azúcar baja. El gel blanco también. Los huevos se disparan. La pechuga, el kilo, casi igual.";
   })();
 
-  /* ipc line */
+  /* rank */
+  (function(){
+    const skip = /naranjas|yogur/i;
+    const items = D.comparisons.filter(c => !skip.test(c.label));
+    const max = Math.max(...items.map(c => Math.abs(c.pct)));
+    const ol = document.getElementById("rank");
+    ol.innerHTML = items.map(c => {
+      const up = c.pct>=0;
+      const w = Math.min(100, Math.abs(c.pct)/max*100);
+      return `<li>
+        <div class="nm">${esc(nm(c.label))}</div>
+        <div class="nums">
+          <div><small>2003</small>${euro(c.then)}</div>
+          <div class="arr">→</div>
+          <div><small>ahora</small>${euro(c.now)}</div>
+          <div class="pct ${up?"up":"down"}"><small>cambio</small>${pct(c.pct,0)}</div>
+        </div>
+        <div class="bar"><i class="${up?"":"ok"}" style="width:${w}%"></i></div>
+      </li>`;
+    }).join("");
+  })();
+
+  /* ipc line, labels on the right */
   (function(){
     const svg = document.getElementById("ipcchart");
     const ser = D.ipc.hicp_series;
-    const W=640,H=280, p={l:38,r:16,t:16,b:28};
-    const years = ser.map(d=>d.y);
-    const ymin=2003, ymax=2026;
-    const vmax = 280;
+    const W=640,H=300, p={l:36,r:118,t:14,b:28};
+    const ymin=2003, ymax=2026, vmax=290;
     const X = y => p.l + (y-ymin)/(ymax-ymin)*(W-p.l-p.r);
     const Y = v => p.t + (1-v/vmax)*(H-p.t-p.b);
-    const path = (key, extra) => {
-      const pts = ser.filter(d => d[key]!=null).map(d => [X(d.y), Y(d[key])]);
-      return pts.map((pt,i)=> (i?"L":"M")+pt[0].toFixed(1)+","+pt[1].toFixed(1)).join(" ");
-    };
+    const path = key => ser.filter(d => d[key]!=null)
+      .map((d,i) => (i?"L":"M")+X(d.y).toFixed(1)+","+Y(d[key]).toFixed(1)).join(" ");
     let s = "";
     [100,150,200,250].forEach(v=>{
-      s += `<line x1="${p.l}" y1="${Y(v)}" x2="${W-p.r}" y2="${Y(v)}" stroke="#d4c4a4" stroke-width=".6"/>`;
-      s += `<text x="${p.l-6}" y="${Y(v)+3}" text-anchor="end" font-size="10" fill="#6a5c4c" font-family="IBM Plex Mono,monospace">${v}</text>`;
+      s += `<line x1="${p.l}" y1="${Y(v)}" x2="${W-p.r}" y2="${Y(v)}" stroke="#d4c4a4" stroke-width=".7"/>`;
+      s += `<text x="${p.l-6}" y="${Y(v)+4}" text-anchor="end" font-size="12" fill="#6a5c4c" font-family="IBM Plex Mono,monospace">${v}</text>`;
     });
-    [2003,2008,2013,2018,2023,2026].forEach(y=>{
-      s += `<text x="${X(y)}" y="${H-8}" text-anchor="middle" font-size="10" fill="#6a5c4c" font-family="IBM Plex Sans,sans-serif">${y}</text>`;
+    [2003,2010,2018,2026].forEach(y=>{
+      s += `<text x="${X(y)}" y="${H-8}" text-anchor="middle" font-size="12" fill="#6a5c4c" font-family="IBM Plex Sans,sans-serif">${y}</text>`;
     });
-    s += `<path d="${path("smi")}" fill="none" stroke="#2c5a38" stroke-width="2.2"/>`;
-    s += `<path d="${path("food")}" fill="none" stroke="#c8102e" stroke-width="2.2"/>`;
-    s += `<path d="${path("general")}" fill="none" stroke="#003d7a" stroke-width="2.2"/>`;
+    const lines = [
+      {k:"smi", col:"#2c5a38", name:"sueldo mín."},
+      {k:"food", col:"#c8102e", name:"comida INE"},
+      {k:"general", col:"#003d7a", name:"IPC"},
+    ];
+    lines.forEach(ln => {
+      s += `<path d="${path(ln.k)}" fill="none" stroke="${ln.col}" stroke-width="2.6"/>`;
+      const last = [...ser].reverse().find(d => d[ln.k]!=null);
+      s += `<text x="${X(last.y)+8}" y="${Y(last[ln.k])+4}" font-size="13" fill="${ln.col}" font-family="IBM Plex Sans,sans-serif">${ln.name} ${Math.round(last[ln.k])}</text>`;
+    });
     const b0=100, b1=100+D.basket.pct;
-    s += `<line x1="${X(2003)}" y1="${Y(b0)}" x2="${X(2026)}" y2="${Y(b1)}" stroke="#f0c400" stroke-width="3"/>`;
-    s += `<circle cx="${X(2003)}" cy="${Y(b0)}" r="4" fill="#1a130c"/>`;
-    s += `<circle cx="${X(2026)}" cy="${Y(b1)}" r="4" fill="#1a130c"/>`;
+    s += `<line x1="${X(2003)}" y1="${Y(b0)}" x2="${X(2026)}" y2="${Y(b1)}" stroke="#c9a227" stroke-width="3.2"/>`;
+    s += `<circle cx="${X(2003)}" cy="${Y(b0)}" r="4.5" fill="#1a130c"/>`;
+    s += `<circle cx="${X(2026)}" cy="${Y(b1)}" r="4.5" fill="#1a130c"/>`;
+    s += `<text x="${X(2026)+8}" y="${Y(b1)+16}" font-size="13" fill="#1a130c" font-family="IBM Plex Sans,sans-serif">cesta ${Math.round(b1)}</text>`;
     svg.innerHTML = s;
   })();
 
-  /* ipc table */
-  (function(){
-    const tb = document.querySelector("#ipc-table tbody");
-    const rows = [{name:"Índice general", pct:D.ipc.ine_general}, ...D.ipc.ine_groups]
-      .sort((a,b)=>b.pct-a.pct);
-    tb.innerHTML = rows.map(r => `<tr><td>${esc(r.name)}</td><td class="num ${r.pct<0?"down":"up"}">${pct(r.pct,1)}</td></tr>`).join("");
-  })();
+  const groupShort = {
+    "Alimentos y bebidas no alcohólicas": "Comida y bebida",
+    "Bebidas alcohólicas y tabaco": "Alcohol y tabaco",
+    "Vestido y calzado": "Ropa y zapatos",
+    "Vivienda, agua, luz y gas": "Casa, luz y gas",
+    "Muebles y artículos del hogar": "Muebles y hogar",
+    "Información y comunicaciones": "Móvil e internet",
+    "Ocio, deporte y cultura": "Ocio",
+    "Restaurantes y alojamiento": "Bares y hoteles",
+    "Seguros y servicios financieros": "Seguros y bancos",
+    "Cuidado personal y otros": "Cuidado personal"
+  };
+  document.querySelector("#ipc-table tbody").innerHTML =
+    [{name:"La vida (IPC general)", pct:D.ipc.ine_general}, ...D.ipc.ine_groups]
+      .sort((a,b)=>b.pct-a.pct)
+      .map(r => `<tr><td>${esc(groupShort[r.name]||r.name)}</td><td class="num ${r.pct<0?"down":"up"}">${pct(r.pct,1)}</td></tr>`)
+      .join("");
 
-  /* hour blocks */
   function blocks(el, n, now){
     const full = Math.floor(n), frac = n-full;
     let s="";
@@ -421,122 +567,119 @@ footer{font-size:.8rem;color:var(--mute);border-top:1px solid var(--rule);paddin
   document.getElementById("blocks-then-cap").textContent = num(D.hours.smi_h_then,1)+" horas · "+euro(D.basket.then);
   document.getElementById("blocks-now-cap").textContent = num(D.hours.smi_h_now,1)+" horas · "+euro(D.basket.now);
 
-  /* dispersion */
+  /* dispersion html */
   (function(){
     const cats = D.dispersion.filter(c => c.n>=40 && c.id!=="otros" && c.id!=="perfumeria" && c.id!=="mascotas" && c.id!=="bebe")
       .sort((a,b)=>a.median-b.median);
-    const svg = document.getElementById("disp");
-    const W=640, rowH=22, H = cats.length*rowH + 28;
-    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
-    const max = Math.max(...cats.map(c=>c.p75))*1.05;
-    const padL=150, padR=20;
-    const x = v => padL + v/max*(W-padL-padR);
-    let s="";
-    cats.forEach((c,i)=>{
-      const y=16+i*rowH;
-      s += `<text x="${padL-8}" y="${y+4}" text-anchor="end" font-size="11" font-family="IBM Plex Sans,sans-serif" fill="#1a130c">${esc(c.label)}</text>`;
-      s += `<line x1="${x(c.p25)}" y1="${y}" x2="${x(c.p75)}" y2="${y}" stroke="#003d7a" stroke-width="6" stroke-linecap="butt" opacity=".35"/>`;
-      s += `<line x1="${x(c.median)}" y1="${y-6}" x2="${x(c.median)}" y2="${y+6}" stroke="#c8102e" stroke-width="2"/>`;
-    });
-    svg.innerHTML = s;
+    const max = Math.max(...cats.map(c=>c.p75));
+    document.getElementById("disp").innerHTML = cats.map(c => {
+      const l = (c.p25/max*100);
+      const w = ((c.p75-c.p25)/max*100);
+      const m = (c.median/max*100);
+      return `<div class="row">
+        <div class="lab">${esc(c.label)} <span>lo normal: ${euro(c.median)}</span></div>
+        <div class="dtrack">
+          <i style="left:${l}%;width:${w}%"></i>
+          <b style="left:${m}%"></b>
+        </div>
+      </div>`;
+    }).join("");
   })();
 
-  /* gaps blanca */
+  /* extra brand gaps from 2003 catalog */
   (function(){
-    const svg = document.getElementById("gaps");
-    const then = D.gaps_2003.filter(g => ["Leche","Aceite de oliva","Yogur","Galletas","Refrescos","Higiene personal","Pasta","Arroz"].includes(g.cat)).slice(0,8);
-    /* curated now */
-    const now = D.gaps_now.filter(g => g.gap!=null);
-    const W=640,H=320, padL=160, padR=90, padT=28, padB=16;
-    const rows = [];
-    then.forEach(g => rows.push({label:g.cat+" · 2003", gap:g.gap}));
-    now.forEach(g => rows.push({label:g.cat+" · 2026", gap:g.gap}));
-    const max = Math.max(...rows.map(r=>r.gap))*1.15;
-    const rowH = (H-padT-padB)/rows.length;
-    let s = `<text x="${padL}" y="14" font-size="11" fill="#6a5c4c" font-family="IBM Plex Sans,sans-serif">cuánto más cara es la marca, en %</text>`;
-    rows.forEach((r,i)=>{
-      const y = padT + i*rowH + rowH*0.35;
-      const w = r.gap/max*(W-padL-padR);
-      const col = r.label.indexOf("2026")>=0 ? "#c8102e" : "#003d7a";
-      s += `<text x="${padL-8}" y="${y+4}" text-anchor="end" font-size="11" font-family="IBM Plex Sans,sans-serif">${esc(r.label)}</text>`;
-      s += `<rect x="${padL}" y="${y-7}" width="${w}" height="14" fill="${col}"/>`;
-      s += `<text x="${padL+w+6}" y="${y+4}" font-size="11" font-family="IBM Plex Mono,monospace" fill="${col}">${pct(r.gap,0)}</text>`;
+    const want = ["Galletas","Yogur","Higiene personal","Pasta","Arroz"];
+    const then = D.gaps_2003.filter(g => want.includes(g.cat));
+    const now = D.gaps_now.filter(g => /Dentífrico|Yogur natural/.test(g.cat));
+    let h = "";
+    then.forEach(g => {
+      h += `<div class="pair">
+        <h3>${esc(g.cat)} en 2003</h3>
+        <div class="grid">
+          <div><small>blanca</small>${euro(g.pl)}</div>
+          <div><small>marca</small>${euro(g.brand)}</div>
+        </div>
+        <div class="gap">La marca, un ${pct(g.gap,0)} más</div>
+      </div>`;
     });
-    svg.innerHTML = s;
+    now.forEach(g => {
+      h += `<div class="pair">
+        <h3>${esc(g.cat)} ahora</h3>
+        <div class="grid">
+          <div><small>${esc(g.pl_name)}</small>${euro(g.pl)}</div>
+          <div><small>${esc(g.br_name)}</small>${euro(g.brand)}</div>
+        </div>
+        <div class="gap">La marca, un ${pct(g.gap,0)} más</div>
+      </div>`;
+    });
+    document.getElementById("gaps").innerHTML = h;
   })();
 
   /* size */
   (function(){
-    const svg = document.getElementById("size");
-    const items = D.size;
-    const W=640,H=260, padL=180, padR=60, padT=16, padB=16;
-    const max = Math.max(20, ...items.map(i=>Math.abs(i.save)))*1.2;
-    const mid = padL + (W-padL-padR)/2;
-    const x = v => mid + v/max*(W-padL-padR)/2;
-    const rowH = (H-padT-padB)/items.length;
-    let s = `<line x1="${mid}" y1="${padT}" x2="${mid}" y2="${H-padB}" stroke="#1a130c" stroke-width="1"/>`;
-    s += `<text x="${x(-max)+4}" y="12" font-size="10" fill="#6a5c4c">el grande sale más caro</text>`;
-    s += `<text x="${W-padR}" y="12" text-anchor="end" font-size="10" fill="#6a5c4c">el grande ahorra</text>`;
-    items.forEach((it,i)=>{
-      const y = padT+10+i*rowH;
-      const col = it.save>=0 ? "#2c5a38" : "#c8102e";
-      s += `<text x="${padL-10}" y="${y+4}" text-anchor="end" font-size="12" font-family="IBM Plex Sans,sans-serif">${esc(it.label)}</text>`;
-      const x1 = mid, x2 = x(it.save);
-      s += `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" stroke="${col}" stroke-width="8"/>`;
-      s += `<text x="${x2 + (it.save>=0?8:-8)}" y="${y+4}" text-anchor="${it.save>=0?"start":"end"}" font-size="11" font-family="IBM Plex Mono,monospace" fill="${col}">${pct(it.save,0)}</text>`;
-    });
-    svg.innerHTML = s;
+    document.getElementById("size").innerHTML = D.size.map(it => {
+      const ok = it.save>=0;
+      const how = ok
+        ? "El pack grande salía un "+pct(it.save,0)+" más barato."
+        : "El pack grande salía un "+pct(Math.abs(it.save),0)+" más caro.";
+      return `<div class="row">
+        <div>
+          <div>${esc(it.label)}</div>
+          <div class="how">${esc(it.small)} → ${esc(it.big)}. ${how}</div>
+        </div>
+        <b class="${ok?"down":"up"}">${ok?pct(it.save,0):pct(it.save,0)}</b>
+      </div>`;
+    }).join("");
   })();
 
-  /* cents hist */
+  /* cents */
   (function(){
     const svg = document.getElementById("cents");
-    const W=640,H=220,p={l:28,r:8,t:10,b:24};
+    const W=640,H=230,p={l:8,r:8,t:12,b:32};
     const data = D.endings;
     const max = Math.max(...data.map(d=>d.n));
     const bw = (W-p.l-p.r)/100;
     let s="";
     const yUni = p.t + (1-(D.meta.n_total*0.01)/max)*(H-p.t-p.b);
-    s += `<line x1="${p.l}" y1="${yUni}" x2="${W-p.r}" y2="${yUni}" stroke="#6a5c4c" stroke-dasharray="3 3" stroke-width="1"/>`;
+    s += `<line x1="${p.l}" y1="${yUni}" x2="${W-p.r}" y2="${yUni}" stroke="#6a5c4c" stroke-dasharray="4 3" stroke-width="1.2"/>`;
     data.forEach(d=>{
       const h = d.n/max*(H-p.t-p.b);
-      const highlight = d.cents===99 || d.cents===95 || d.cents===0;
-      s += `<rect x="${p.l+d.cents*bw}" y="${H-p.b-h}" width="${Math.max(bw-0.4,1)}" height="${h}" fill="${highlight?"#c8102e":"#003d7a"}" opacity="${highlight?1:.75}"/>`;
+      const hi = d.cents===99 || d.cents===95 || d.cents===0;
+      s += `<rect x="${p.l+d.cents*bw}" y="${H-p.b-h}" width="${Math.max(bw-0.3,1)}" height="${h}" fill="${hi?"#c8102e":"#003d7a"}"/>`;
     });
     [0,25,50,75,99].forEach(c=>{
-      s += `<text x="${p.l+c*bw+bw/2}" y="${H-8}" text-anchor="middle" font-size="10" font-family="IBM Plex Mono,monospace" fill="#6a5c4c">.${String(c).padStart(2,"0")}</text>`;
+      s += `<text x="${p.l+c*bw+bw/2}" y="${H-10}" text-anchor="middle" font-size="13" font-family="IBM Plex Mono,monospace" fill="#6a5c4c">,${String(c).padStart(2,"0")}</text>`;
     });
     svg.innerHTML = s;
   })();
 
   /* depts */
   (function(){
-    const svg = document.getElementById("depts");
     const items = D.depts.slice().sort((a,b)=>b.median-a.median);
-    const W=640,H=280, padL=150, padR=70, padT=8, padB=8;
-    const max = items[0].median*1.15;
-    const rowH = (H-padT-padB)/items.length;
-    let s="";
-    items.forEach((it,i)=>{
-      const y = padT+i*rowH+rowH*0.3;
-      const w = it.median/max*(W-padL-padR);
-      s += `<text x="${padL-8}" y="${y+4}" text-anchor="end" font-size="12" font-family="IBM Plex Sans,sans-serif">${esc(it.name)}</text>`;
-      s += `<rect x="${padL}" y="${y-8}" width="${w}" height="16" fill="#003d7a"/>`;
-      s += `<text x="${padL+w+6}" y="${y+4}" font-size="11" font-family="IBM Plex Mono,monospace">${euro(it.median)}</text>`;
-    });
-    svg.innerHTML = s;
+    const max = items[0].median;
+    document.getElementById("depts").innerHTML = items.map(it => {
+      const w = it.median/max*100;
+      return `<div class="barrow">
+        <div class="lab"><span>${esc(it.name)}</span><b>${euro(it.median)}</b></div>
+        <div class="track"><i style="width:${w}%"></i></div>
+      </div>`;
+    }).join("");
   })();
 
-  /* heatmap */
+  /* heat */
   (function(){
     const heat = D.heat.filter(h => h.eur_100kcal!=null).sort((a,b)=>a.eur_100kcal-b.eur_100kcal);
     const maxK = Math.max(...heat.map(h=>h.eur_100kcal));
-    const box = document.getElementById("heat");
-    box.innerHTML = heat.map(h=>{
+    document.getElementById("heat").innerHTML = heat.map(h=>{
       const t = h.eur_100kcal/maxK;
-      const bg = `rgba(200,16,46,${0.08+t*0.45})`;
-      const prot = h.eur_10gprot==null ? "—" : euro(h.eur_10gprot,2);
-      return `<div class="cell" style="background:${bg}"><strong>${esc(h.name)}</strong><div class="n">${euro(h.eur_100kcal,2)}</div><div class="u">cada 100 kcal</div><div class="n" style="margin-top:.25rem">${prot}</div><div class="u">cada 10 g de proteína</div></div>`;
+      const bg = `rgba(200,16,46,${0.07+t*0.42})`;
+      const prot = h.eur_10gprot==null ? "sin proteína" : euro(h.eur_10gprot,2)+" / 10 g prot.";
+      return `<div class="cell" style="background:${bg}">
+        <strong>${esc(h.name)}</strong>
+        <div class="n">${euro(h.eur_100kcal,2)}</div>
+        <div class="u">cada 100 calorías</div>
+        <div class="n" style="margin-top:.28rem">${prot}</div>
+      </div>`;
     }).join("");
   })();
 })();
